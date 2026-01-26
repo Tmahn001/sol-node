@@ -22,4 +22,20 @@ document.addEventListener('DOMContentLoaded', () => {
             link.addEventListener('click', () => toggleMenu(false));
         });
     }
+
+    // Trust Badges Marquee for Mobile
+    const marqueeContainer = document.querySelector('.trust-badges-marquee');
+    if (marqueeContainer) {
+        // Clone for seamless loop if needed (usually for mobile marquee)
+        const cloneContent = () => {
+            if (window.innerWidth < 1024 && !marqueeContainer.dataset.cloned) {
+                const content = marqueeContainer.innerHTML;
+                marqueeContainer.innerHTML = content + content;
+                marqueeContainer.dataset.cloned = 'true';
+            }
+        };
+
+        cloneContent();
+        window.addEventListener('resize', cloneContent);
+    }
 });
