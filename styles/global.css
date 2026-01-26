@@ -1,0 +1,92 @@
+@import './variables.css';
+
+/* Box Sizing Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+html {
+    /* Responsive scaling: 16px at 1728px width, scaling down to 12px min */
+    /* 1rem = 16px at 1728px viewport */
+    font-size: clamp(12px, 0.9259vw, 16px);
+
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-primary);
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: 250;
+    /* ExtraLight from Figma */
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* Utilities */
+.container {
+    width: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding-sm);
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0 var(--container-padding-md);
+    }
+}
+
+/* Laptop/Desktop */
+@media screen and (min-width: 1024px) {
+    .container {
+        padding: 0 var(--container-padding-lg);
+    }
+}
+
+/* Large Desktop */
+@media screen and (min-width: 1440px) {
+    .container {
+        padding: 0 var(--container-padding);
+    }
+}

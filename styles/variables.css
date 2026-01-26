@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    /* Colors */
+    --color-background: #000000;
+    --color-text-primary: #FFFFFF;
+    --color-text-secondary: #9CA3AF;
+    /* Fallback for now */
+    --color-accent: #22C55E;
+    /* Green from buttons */
+    --color-glass-border: rgba(255, 255, 255, 0.1);
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+
+    /* Typography */
+    --font-primary: 'Zalando Sans', system-ui, -apple-system, sans-serif;
+
+    /* Font Sizes (Fluid Scaling: Mobile -> Desktop) */
+    --text-h1: clamp(2.5rem, 5vw + 1rem, 5rem);
+    /* 40px -> 80px */
+    --text-h2: clamp(2rem, 4vw + 1rem, 3.5rem);
+    /* 32px -> 56px */
+    --text-h3: clamp(1.75rem, 3vw + 1rem, 3rem);
+    /* 28px -> 48px */
+    --text-h4: clamp(1.5rem, 2.5vw + 1rem, 2.5rem);
+    /* 24px -> 40px */
+    --text-h5: clamp(1.25rem, 2vw + 1rem, 2rem);
+    /* 20px -> 32px */
+
+    --text-xxl: clamp(1.5rem, 2.5vw + 1rem, 2.5rem);
+    /* 24px -> 40px */
+    --text-xl: clamp(1.25rem, 2vw + 1rem, 2rem);
+    /* 20px -> 32px */
+    --text-l: clamp(1.125rem, 1.5vw + 1rem, 1.5rem);
+    /* 18px -> 24px */
+    --text-m: clamp(1rem, 1vw + 1rem, 1.125rem);
+    /* 16px -> 18px */
+    --text-s: clamp(0.75rem, 0.5vw + 1rem, 0.875rem);
+    /* 12px -> 14px */
+
+    /* Spacing */
+    --container-width: 108rem;
+    --container-padding: 7rem;
+    --container-padding-lg: 5.83rem;
+    --container-padding-md: 1.5rem;
+    --container-padding-sm: 1rem;
+
+    /* Border Radius */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+}
